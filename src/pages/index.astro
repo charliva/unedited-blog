@@ -29,7 +29,7 @@ const posts = allPosts.slice(0, postsPerPage);
 								src={post.data.heroImage} 
 								alt={post.data.title} 
 								class="h-full w-full object-cover"
-								sizes="(max-width: 720px) 100vw, 720px"
+								sizes="(max-width: 320px) 320px, (max-width: 480px) 480px, (max-width: 720px) 720px, 100vw"
 								srcset={`${post.data.heroImage}?w=320 320w, ${post.data.heroImage}?w=480 480w, ${post.data.heroImage}?w=720 720w`}
 								loading="lazy"
 							/>
