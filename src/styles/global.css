@@ -40,8 +40,12 @@
   @apply text-white;
 }
 
-.prose h1,
-.prose h2,
+.prose h1 {
+  font-weight: 700;
+}
+.prose h2 {
+  font-weight: 700;
+}
 .prose h3,
 .prose h4 {
   @apply text-white;
