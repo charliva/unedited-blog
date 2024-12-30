@@ -1,11 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2"),
+    url("/fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.woff2") format("woff2"),
+    url("/fonts/Inter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
-  --font-base: 'Space Grotesk', system-ui, sans-serif;
+  --font-base: "Inter", sans-serif;
 }
 
 @layer base {
@@ -24,7 +38,10 @@
   @apply text-white;
 }
 
-.prose h1, .prose h2, .prose h3, .prose h4 {
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
   @apply text-white;
 }
 
@@ -35,4 +52,3 @@
 .prose a {
   @apply text-white underline decoration-white/30 underline-offset-4 transition-colors hover:decoration-white;
 }
-
